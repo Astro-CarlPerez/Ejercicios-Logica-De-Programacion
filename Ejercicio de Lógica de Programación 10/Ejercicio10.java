@@ -13,14 +13,14 @@ public class Ejercicio10 {
 	// 2.- Introducimos palabras para nuestro diccionario
     diccionario.put("Avion", "Airplane");
     diccionario.put("Ave", "Bird");
-    diccionario.put("Aire", "Aird");
+    diccionario.put("Aire", "Air");
     diccionario.put("Balon", "Ball");
     diccionario.put("Burro", "Donkey");
     diccionario.put("Carro", "Car");
     diccionario.put("Camaron", "Shrimp");
     diccionario.put("Catolisismo", "Catholicism");
     diccionario.put("Cocina", "Kitchen");
-    diccionario.put("Dardo", "dart");
+    diccionario.put("Dardo", "Dart");
     diccionario.put("Dentadura", "Teeth");
     diccionario.put("Disco", "Disc");
     diccionario.put("Economia", "Economics");
@@ -55,7 +55,7 @@ public class Ejercicio10 {
       String palabra = (String) diccionario.keySet().toArray()[random.nextInt(diccionario.size())];
 
       // 5.- Pedimos al usuario que teclee la traducción al inglés de la palabra
-      System.out.println("Por favor, traduce al ingles la palabra '" + palabra + "'(La primera letra debe ser mayuscula siempre):");
+      System.out.println("Por favor, traduce al ingles la palabra '" + palabra + "'(NOTA: La primera letra debe ser mayuscula siempre):");
       String respuesta = sc.nextLine();
 
       // 6.- Comprobamos si el input del usuario es correcto
@@ -69,7 +69,7 @@ public class Ejercicio10 {
     }
 
     // Mostramos al usuario cuántas respuestas correctas e incorrectas tiene
-    System.out.println("De 5 palabras traducidas del Espaniol al Inglesc, estos fueron tus resultados:");
+    System.out.println("De 5 palabras traducidas del Espaniol al Ingles, estos fueron tus resultados:");
     System.out.println("Respuestas incorrectas: " + respIncorrectas);   
     System.out.println("Respuestas correctas: " + respCorrectas);
    
